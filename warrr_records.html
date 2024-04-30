@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.3.4/dist/web3.min.js"></script>
+        <link rel="icon" href="static/img/p.svg">
+        <title>View wARRR Bridge Claims</title>
+        <link rel="stylesheet" href="static/css/style.css">   
+    </head>
+<body>
+    <h1>Retrive wARRR Token Transfer Records</h1>
+    <ul id="transfersList"></ul>
+    <script>
+        const deploymentBlock = 1234567; // contract deployment block
+        const contractAddress = '';  // contract address
+        const contractABI = [
+            {
+                "anonymous": false,
+                "inputs": [
+                    {
+                        "indexed": false,
+                        "internalType": "uint256",
+                        "name": "amount",
+                        "type": "uint256"
+                    },
+                    {
+                        "indexed": false,
+                        "internalType": "string",
+                        "name": "sapling",
+                        "type": "string"
+                    }
+                ],
+                "name": "TransferRecorded",
+                "type": "event"
+            }
+        ];
+
+        let web3;
+
+        async function loadTransfers() {
+            if (window.ethereum) {
+                web3 = new Web3(window.ethereum);
+                await window.ethereum.enable();
+                const contract = new web3.eth.Contract(contractABI, contractAddress);                
+
+                contract.getPastEvents('TransferRecorded', {
+                    fromBlock: deploymentBlock,
+                    toBlock: 'latest'
+                }).then(function(events) {
+                    const transfersList = document.getElementById('transfersList');
+                    events.forEach(async (event) => {
+                        const tx = await web3.eth.getTransaction(event.transactionHash);
+                        const block = await web3.eth.getBlock(tx.blockNumber);
+                        const listItem = document.createElement('li');
+                        listItem.textContent = `Sender: ${tx.from}, wARRR Amount: ${event.returnValues.amount}, Block Number: ${tx.blockNumber}, Timestamp: ${new Date(block.timestamp * 1000).toLocaleString()}, Sapling Address: ${event.returnValues.sapling}`;
+                        transfersList.appendChild(listItem);
+                    });
+                }).catch(console.error);
+            } else {
+                console.log('Ethereum wallet is not connected. Please install MetaMask.');
+            }
+        }
+
+        window.addEventListener('load', loadTransfers);
+    </script>
+</body>
+</html>

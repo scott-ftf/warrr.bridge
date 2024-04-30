@@ -1,0 +1,25 @@
+<svg class="networkLogo" id="ethlogo" version="1.1" x="0" y="0" xml:space="preserve" width="30.688" height="50.001" xmlns="http://www.w3.org/2000/svg">
+  <style type="text/css" id="style2">
+    .el1{fill:#8c8c8c}.el3{fill:#343434}
+  </style>
+  <g id="g862" transform="translate(-4.813 -6.25) scale(.62501)">
+    <g id="LWPOLYLINE" style="fill:#01b3e2;fill-opacity:1">
+      <path class="el1" id="polyline22" style="fill:#01b3e2;fill-opacity:1" d="M7.7 55.4 32.2 90V69.9L7.7 55.4"/>
+    </g>
+    <g id="LWPOLYLINE_1_" style="fill:#53ba68;fill-opacity:1">
+      <path id="polyline25" style="fill:#53ba68;fill-opacity:1" d="m7.7 50.7 24.5 14.6V39.6L7.7 50.7"/>
+    </g>
+    <g id="LWPOLYLINE_2_" style="fill:#feed5b;fill-opacity:1">
+      <path class="el1" id="polyline28" style="fill:#feed5b;fill-opacity:1" d="m7.7 50.7 24.5-11.1V10L7.7 50.7"/>
+    </g>
+    <g id="LWPOLYLINE_3_" style="fill:#6676b9;fill-opacity:1">
+      <path class="el3" id="polyline31" style="fill:#6676b9;fill-opacity:1" d="M56.8 55.4 32.2 90V69.9l24.6-14.5"/>
+    </g>
+    <g id="LWPOLYLINE_4_" style="fill:#a85ca5;fill-opacity:1">
+      <path id="polyline34" style="fill:#a85ca5;fill-opacity:1" d="M56.8 50.7 32.2 65.3V39.6l24.6 11.1"/>
+    </g>
+    <g id="LWPOLYLINE_5_" style="fill:#f48067;fill-opacity:1">
+      <path class="el3" id="polyline37" style="fill:#f48067;fill-opacity:1" d="M56.8 50.7 32.2 39.6V10l24.6 40.7"/>
+    </g>
+  </g>
+</svg>
