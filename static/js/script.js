@@ -1304,7 +1304,7 @@ function createIntroduction() {
       <li><strong>Claim Period</strong> - 60 days to submit claims or return wARRR</li>
       <li><strong>ARRR refunds</strong>  - 30 days after the claim period, ARRR payments will be sent to fullfil all claims</li>
       <li><strong>wARRR Burn</strong>  - 30 days later all controlled wARRR will be burnt</li>
-      <li><strong>Relinquish Ownership</strong>  - 30 days later ownership of contracts will be renounced</li>
+      <li><strong>Renounce Ownership</strong>  - 30 days later ownership of contracts will be renounced</li>
     </ul>
     Following these steps, there will be no ability for exceptions or any other additional claims to be made.
     No person will any longer have control of the wARRR token contracts.
