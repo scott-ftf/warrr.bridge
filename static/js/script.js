@@ -677,7 +677,7 @@ function showConfirmClaimPage() {
   const disclaimer = document.createElement('p');
   disclaimer.classList.add('disclaimer');
   disclaimer.innerHTML = `Submitting this claim is final. To prevent fraud, no corrections or changes 
-  can be made. <u>KEEP YOUR PIRATE CHAIN PRIVATE KEY SAFE!</u>`;
+  can be made.<br /><u>KEEP YOUR PIRATE CHAIN PRIVATE KEY SAFE!</u>`;
   claimContainer.appendChild(disclaimer);
 
   // confirmation section
@@ -1248,7 +1248,7 @@ function createIntroduction() {
   let s1 = document.createElement('section')
   s1.innerHTML = `<h2>INTRODUCTION</h2>
   <p>
-    wARRR was created as a low friction path from Ethereum & Binanace Smart Chains 
+    wARRR was created as a low friction path from Ethereum & Binance Smart Chains 
     to the Pirate Chain network. This functionality was provided by a bridge built 
     and maintained via a partnership with Aureus Trading, where 1 ARRR always equaled
     1 wARRR.
@@ -1257,9 +1257,9 @@ function createIntroduction() {
   <p>
     On July 30th of 2023, Aureus suffered an attack and made the decision to cease 
     bridge operations. Alternative solutions for a replacement service where considered, 
-    but ultimately trusted custodial brides are a notoruius weak point succeptable to attack. 
+    but ultimately trusted custodial brides are a notorius weak point succeptable to attack. 
     Instead, new solutions are being developed with our friends from the Verus network. 
-    The vARRR PBaaS chain provides this cross-chain functinality via atomic swaps and Verus' 
+    The vARRR PBaaS chain provides this cross-chain functionality via atomic swaps and Verus' 
     trustless and non-custodial Ethereum Bridge.
   </p> 
     

@@ -207,7 +207,8 @@ button:hover, .btn:hover, .btn a:hover {
   max-width: 600px;
   text-align: left;
   display: block;
-  margin: 20px auto 0px;  
+  margin: 20px auto 0px; 
+  color: #ebebeb; 
 }
 .introduction li {
   margin-top: 10px;
